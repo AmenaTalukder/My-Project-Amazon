@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .items-container{
+            width: 80%;         
+            background-color: white;
+            border: 1px solid #ddd;       
+            margin-left: 50px;
+            margin-top: 10px; 
+            display: block;
+          
+        }
+        .item-container{   
+            background-color: white;
+            border: 1px solid #cbc7c7; 
+            margin: 20px;  
+            display: flex;
+            align-items: flex-start;
+        }
+        .img-container img {
+            max-width: 250px;
+            margin-right: 20px;
+            display: inline;
+        }
+        .info {
+            flex: 1;
+            margin-top: 30px;
+            margin-bottom:35px ;
+        }
+        .info h4 {
+            font-size: 15px;
+            margin: 10px 5px;
+            padding-bottom: 10px;
+        }
+        .company-site a {
+            color: #0073bb;
+            text-decoration: none;
+        }
+        .rating {
+            margin-top: 10px;
+        }
+        .rating .heading {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .fa {
+            font-size: 20px;
+        }
+        .checked {
+            color: orange;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 15px;
+            color: #282c3f;
+            white-space: nowrap;
+        }
+        .current-price {
+            font-size: 14px;
+            font-weight: 700;
+            color: #282c3f;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: #7e818c;
+            font-weight: 400;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .discount {
+            color: #ff905a;
+            font-weight: 700;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .add-to-cart {
+            background-color: #FFD814;
+            border: 1px solid #FCD200;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: white;
+            border: 1px solid #ddd;
+          display: inline;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p, .sidebar label {
+            margin: 10px 0;
+            color: #0b0b0b;
+            font-size: 14px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #191a1a;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+      .container {
+            display: block; 
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            user-select: none;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: #989494 transparent;
+            border: 1px solid rgb(78, 77, 77);
+            border-radius: 3px;
+        }
+
+        .container input:checked ~ .checkmark {
+            background-color: #007bff;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        .container .checkmark:after {
+            left: 8px;
+            top: 4px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+
+        .price-range {
+            margin-top: 20px; 
+        }
+
+        .price-range input {
+            width: 100%;  
+        }
+        .heading {
+        font-size: 15px;
+        margin-right: 25px;
+        }
+
+        .fa {
+        font-size: 15px;
+        }
+
+        .checked {
+        color: orange;
+        }
+        .rating p{
+            color: black;
+        }
+      
+         .main{
+            display: flex;
+            align-items: flex-start;
+         }
+         /* rating-css-code */
+         
+            .star {
+                font-size: 3vh;
+                cursor: pointer;
+            }
+
+            .one {
+                color: rgb(255, 0, 0);
+            }
+
+            .two {
+                color: rgb(255, 106, 0);
+            }
+
+            .three {
+                color: rgb(251, 255, 120);
+            }
+
+            .four {
+                color: rgb(255, 255, 0);
+            }
+
+            .five {
+                color: rgb(24, 159, 14);
+            }
+            .rating{
+                font-size: 2vh;
+            }
+    </style>
+</head>
+<body>
+   
+<div class="main">
+    <div class="sidebar" >
+    <div class="recent">
+        <h2>Recently used filters</h2>
+        <p><a href="#">All Discounts</a></p>
+        <hr>
+    </div>
+
+    <div class="department">
+        <h2>Department</h2>
+        <p><a href="#">Computers & Tablets</a></p>
+        <p><a href="#">Traditional Laptop Computers</a></p>
+        <p><a href="#">Tower Computers</a></p>
+        <p><a href="#">Mini Computers</a></p>
+        <p><a href="#">2 in 1 Laptop Computers</a></p>
+    </div>
+<hr>
+    <div class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="rating">
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <h3 class='rating' id="output">Rating is: 0/5</h3>
+            <p>Average based on of reviews.</p>
+        </div>
+    </div>
+<hr>
+
+    <div class="brands">
+        <h2>Brands</h2>
+        <label class="container">HP
+            <input type="checkbox" checked="checked" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Dell
+            <input type="checkbox" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Lenovo
+            <input type="checkbox" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Apple
+            <input type="checkbox" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">ASUS
+            <input type="checkbox" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">iBUYPOWER
+            <input type="checkbox" class="brand-checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+<hr>
+    <div class="price-range">
+        <p style="font-weight: bold;">Price:</p>
+        <p style="font-weight: bold;" id="price-range-display">$165–$2,700+</p>
+        <input type="range" id="price-slider" min="165" max="2700" step="1">
+    </div>
+<hr>
+
+<div class="operating-system">
+    <h2>Computer Operating System</h2>
+        <label class="container">Windows 11 Home
+            <input type="checkbox" checked="checked" class="os-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Windows 11 Pro
+            <input type="checkbox" class="os-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Windows 10 Pro
+            <input type="checkbox" class="os-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Mac OS
+            <input type="checkbox" class="os-checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Chrome OS
+            <input type="checkbox" class="os-checkbox">
+            <span class="checkmark"></span>
+        </label>
+       
+</div>
+<hr>
+    <div class="memory">
+        <h2>Notebook Computer Ram Memory Size</h2>
+        <label class="container">4 GB
+            <input type="checkbox" class="memory-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">8 GB
+            <input type="checkbox" class="memory-checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">16 GB
+            <input type="checkbox" class="memory-checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">32 GB
+            <input type="checkbox" class="memory-checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+   <hr>
+</div>
+
+<div class="items-container" >
+   
+</div>
+</div>
+    <script src="ratingCheakbox.js"></script>
+    <script src="product.js"></script>
+     
+    
+</body>
+</html>

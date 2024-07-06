@@ -1,0 +1,700 @@
+*{  padding: 0;
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-color: #151515;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+} 
+.Amazon-logo {
+    height: 45px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+i{
+    color: #FFFFFF;
+}
+.nav_bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+
+}
+
+/* nav box2-delivery  */
+
+.deliver{
+    margin-left: 15px;
+    font-size: 0.85rem;
+    color: #FFFFFF;
+}
+.Bangla{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin:3px;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+
+
+/* nav box3-search bar */
+
+.search_bar {
+    background-color: #FFFFFF;
+    height: 40px;
+    min-width: 200px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #e09027;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* log in */
+.action_name a{
+    text-decoration: none;
+}
+
+.login-container {
+    display: inline-block;
+    position: relative;
+}
+
+.login {
+    cursor: pointer;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+
+/* Nav box4-account */
+.account-list a{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.Returns-order a{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.cart a{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+span{
+    font-size: 0.95rem;
+}
+.list{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Nav box5-cart */ 
+.cart{
+    width: 0.85rem;
+    font-weight: 700; 
+    display: flex;
+   margin-top: 10px;
+}
+.cart i{
+    font-size: 1.5rem;
+}
+
+/* nicher header */
+
+.secondbar {
+    background-color: #3a3d3d;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.secondbar a{
+    text-decoration: none;
+    color: rgb(248, 244, 238);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px ;
+}
+.secondbar p{
+    height: 15px;
+    margin: 5px 0px 6px;
+    padding: 8px 9px;
+}
+
+.ancor:hover{
+    border: 3px solid #e09027;
+    background-color: #e09027;
+}
+
+/* image */
+.background-imageset{
+    background-image: url("bak.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* shop center-div1 */
+
+
+.shop-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height:1000px;
+    background-color:rgb(247, 246, 251);
+    margin-top: 1100px;
+   
+}
+
+/* Shop-center-every-box */
+.box{
+    border:  2px solid wheat;
+    background-color: rgba(255, 251, 254, 0.749);
+    box-shadow: 10px 10px 5px #aab4b4 ;
+    background-size: cover;
+    height: 420px;
+    width: 23%;
+    margin-top: 0;
+}
+
+h2{
+    font-size:1.4rem;
+    color: #0F1111;
+    margin: 20px 0px 5px 20px;
+}
+.see a{
+    text-decoration: none;
+    color: #007175;
+}
+.see {
+    font-weight: 17px;
+    color: #007175;
+    margin-bottom: 15px ; 
+    margin-left: 15px;
+}
+
+
+/* shop-first-div */
+.boxone{
+    background-size: cover;
+    width: 300px;
+    height: 320px;
+    margin: 10px 20px;
+}
+
+img{
+    margin-left: 10px;
+    width: 90%;
+    height: 90%; 
+}
+
+/* shop-second-div */
+
+.attach{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 320px;
+    margin: 10px 20px;
+}
+ /* two-three-four-five-eight-middle div  */
+.three{
+    background-color: white;
+    width: 50%;
+    float: left;   
+}
+.three p{
+    color: #181919;  
+    font-size: 0.75rem;
+    margin-left: 7px;
+}
+.GamingAccessories{
+    height:130px;
+    width: 135px;
+}
+.headsetsmice{
+   float: left;   
+}
+.keyboardChiars{
+    float: right;
+}
+
+/* shop-three-div */
+.diningkitchen{
+    height:135px;
+    width: 135px;
+    float: left; 
+}
+
+.homehealth{
+    height:135px;
+    width: 135px;
+    float: right;
+}
+
+/* shop-four-div */
+.Smartphones{
+    height:135px;
+    width: 290px;
+    float: left; 
+}
+.part{
+    background-color:white;
+    height:135px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ree p{
+    color: #0F1111;
+    font-weight: 0.7rem;
+    font-size: 12px;
+     margin: 0px 25px; 
+}
+
+.TabletsLaptops{
+    height:80px;
+    width: 85px;
+    float: right;
+    margin-top: 10px;
+}
+.Tvs{
+    height:80px;
+    width: 85px;
+    float: left; 
+    margin-top: 10px;
+}
+
+
+/* shop-five-div */
+/* jeans and dresses css*/
+.JeansDresses{
+    margin-top: 5px;
+    height:135px;
+    width: 135px;
+    float: left; 
+}
+
+.TopsShoes{
+    margin-top: 5px;
+    height:135px;
+    width: 135px;
+    float: right;
+}
+
+/* shop-six & seven-div */
+.boxsixboxseven{
+    width: 300px;
+    height: 320px;
+    margin: 10px 20px;
+}
+
+/* shop-eight-div */
+/* dress and jacket css*/
+.dress{
+    margin-top: 5px;
+    height:135px;
+    width: 135px;
+    float: left; 
+}
+/* knits and Jewellery css*/
+.Knitjelaryew{
+    margin-top: 5px;
+    height:135px;
+    width: 135px;
+    float: right;
+}
+
+
+
+
+
+/* .middle-div  */
+
+.middle{
+    background-color:rgb(247, 246, 251);
+    height:450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 750px;
+}
+/* Best Sellers in Kitchen & Dining */
+.container1 {
+    width: 97%;
+    margin-top:5px;
+    text-align: start;
+}
+/* container-slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1400px; /* Adjusted max-width to fit more images */
+    margin: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 9px;
+    width: 1250px;
+}
+
+.slide {
+    min-width: calc(100% / 5); /* 5 images per view */
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(55, 103, 122);
+    color: white;
+    border: none; 
+    cursor: pointer;
+    z-index: 1000;
+    width: 177px;
+    margin: 0%;
+    }
+
+button.prev {
+    left: 0;
+    margin-left: -70px;
+    height: 110px;
+    width: 115px;
+}
+
+button.next {
+    right: 0;
+    margin-right: -70px;
+    height: 110px;
+    width: 115px;
+}
+
+
+/* Top Sellers in Books for you */
+.container2{
+    width: 97%;
+    text-align: start;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.book{
+    min-width: calc(100% / 5);
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.book img{
+    width: 80%;
+    height: 100%;
+}
+
+/* container-box-saparation  */
+.saparation1{
+    height:450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+} 
+
+.sapcont3-1{
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px;
+}
+.gameinmerchndise {
+    border: 2px solid wheat;
+    background-color: rgba(255, 251, 254, 0.749);
+    box-shadow: 10px 10px 5px #aab4b4;
+    background-size: cover;
+    height: 420px;
+    width: 23%;
+    
+}
+ /* sapcont3-2  */
+ .merchandise{
+    height:145px;
+    width: 145px;
+ }
+.appral{
+    float: left;  
+}
+.hats{
+    float: right;
+}
+.Action{
+    float: left; 
+}
+.mugs{
+    float: right;  
+}
+
+/* Personal Care under $25*/
+.welcoming-deco {
+    height:135px;
+    width: 135px;
+}
+.out{
+    float: left; 
+}
+.Wreaths{
+    float: right;
+}
+.pollows{
+    float: left; 
+}
+.walls-art{
+    float: right;
+}
+.sapcont3-4{
+    width: 280px;
+    height: 280px;
+    margin: 20px 20px;
+}
+
+
+/* <!-- container-six  -->  */
+.container{
+    height:420px;
+    width: 100%;
+    margin: 20px;   
+}
+   
+.container p:hover{
+    text-decoration: underline;
+}
+.saparation2{
+    height:450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+} 
+
+.sapContImg{
+    width: 300px;
+    height: 280px;
+    margin: 20px 20px;  
+}
+
+
+/* <!-- Top Sellers in Baby Products for you-->  */
+
+.container3 {
+    width: 97%;
+    margin-top:60px;
+    margin-bottom: 65px;
+    text-align: start;
+}
+.baby img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 250px;
+    height:250px;
+}
+
+/* <!-- container-five-dealsProducts  -->  */
+.container4 {
+    width: 97%;
+    margin-top:20px;
+    margin-bottom: 75px;
+    text-align: start;
+}
+.topdeals img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* <!-- container-seven  -->  */
+.container5 {
+    width: 97%;
+    margin-top:60px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+.movie img{
+    width: 270px;
+    height: 300px;
+    margin-top: 10px;
+} 
+
+/* <!-- container-eight  -->  */
+.container6 {
+    width: 97%;
+    margin-top:60px;
+    margin-bottom: 75px;
+    text-align: start;
+}
+.toy img{
+    width: 270px;
+    height: 300px;
+    margin-top: 10px;
+} 
+
+
+/* <!-- container-Nine  -->  */
+.container7 {
+    width: 97%;
+    margin-top:10px;
+    margin-bottom: 75px;
+    text-align: start;
+}
+.pc img{
+    margin-top: 10px;
+    width: 270px;
+    height: 300px;
+} 
+
+.personalized{
+    background-color: #FFFFFF;
+    width: 1461px;
+    height: 144px;
+    color: #000;
+    font-size: 15px;
+    text-align: center; 
+}
+   
+
+.personalized p{
+    margin: 20px 10px ;
+}
+.personalized a{
+    color:#000 ;
+}
+.personalized a:hover{
+    text-decoration: underline;
+}
+.customer{
+    margin: 0px 40px ;
+}
+button {
+    cursor: pointer;
+    background-color: #e09027;
+    width: 200px;
+    height: 35px;
+    border-radius: 7px ;
+    border: 2px solid #e18b1b;
+    margin: 10px 25px;
+    text-decoration:none;
+}
+button a{
+    color:black ;
+}
+
+/* See personalized recommendations---box end */
+
+/* footer */
+
+nav{
+    margin-top: 5px;
+    background-color: rgb(109, 109, 107);
+    width: 100%;
+    height: 30px;
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+footer{
+    background-color: rgb(72, 72, 72);
+    width: 100%;
+    height: 350px;
+    color: #FFFFFF;
+    
+}
+.next{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px 35px 0px;
+}
+ul{
+    list-style: none;
+}
+.firstdiv a{
+    color: #FFFFFF;
+    
+}
+.firstdiv a:hover{
+    text-decoration: underline;
+}
+.end{
+    background-color: rgb(109, 109, 107);
+    width: 100%;
+    height:100px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.end a{
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+.end a:hover{
+    text-decoration: underline;
+}

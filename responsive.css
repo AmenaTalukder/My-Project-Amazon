@@ -1,0 +1,148 @@
+@media only screen and (min-width:240px) and (max-width: 768px){
+   .Bangla.list{
+        font-size: 0.65rem;
+      
+    }
+    .box {
+        width: 30%;
+    }
+    .boxone{
+       
+        width: 30%;
+        height: 30%;
+        margin: 10px 20px;
+        border:  1px solid rgb(208, 145, 28);
+    }
+    img{
+        width: 30%;
+        height: 30%;
+    }
+    h2{
+        font-size:300px;
+        color: #0F1111;
+        margin: 20px 0px 5px 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #007175;
+    }
+    .see {
+        font-weight: 17px;
+        color: #007175;
+        margin: 15px 0px 10px 20px; 
+    }
+    .container {
+        height:30%;
+        width: 100%;
+        margin: 20px;
+    }
+    .middle{
+        background-color:rgb(247, 246, 251);
+        height:45px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+}
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+        .box {
+            width: 30%;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .nav_bar, .secondbar {
+            flex-direction: column;
+        }
+    
+        .search_bar {
+            margin: 10px 0;
+        }
+    
+        .box {
+            width: 45%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .box {
+            width: 100%;
+        }
+    
+        .secondbar {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .logo_Container img {
+            width: 100px;
+        }
+    
+        .search_icon {
+            padding: 5px;
+        }
+    
+        .account-list, .Returns-order, .cart {
+            margin: 5px 0;
+        }
+    
+        .background-imageset {
+            padding: 10px;
+        }
+    
+        .box {
+            margin: 5px;
+            padding: 10px;
+        }
+    
+        .box h2 {
+            font-size: 16px;
+        }
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #232f3e;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+    
+    footer .next {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    footer .firstdiv {
+        flex: 1;
+        padding: 20px;
+        min-width: 200px;
+    }
+    
+    footer .end {
+        margin-top: 20px;
+    }}
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    
+    footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    footer ul li {
+        margin: 5px 0;
+    }
+    
+    

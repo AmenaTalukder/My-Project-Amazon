@@ -1,0 +1,128 @@
+
+.login-container:hover .dropdown-menu {
+    display: block;
+}
+.massagebox.open-popup, .second-massagebox.open-second-popup {
+    display: block;
+}
+
+.massagebox {
+    width: 500px;
+    background-color: #f1eeea;
+    color: #151414;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 9999;
+}
+
+  .massagebox.arrow-top {
+    margin-top: 40px;
+  }
+   
+  .massagebox.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 30px;
+    top: -15px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #f1eeea;
+    border-style: solid;
+    border-color: transparent transparent #f1eeea transparent;
+  }
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#box-popup {
+    top: 100px;
+    left: 32%;
+}
+
+#second-popup {
+    top: 110px;
+    right: auto;
+    left: 73%;
+}
+
+.second-massagebox {
+    width: 180px;
+    background-color: #f1eeea;
+    color: #101010;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 9999;
+}
+
+.second-massagebox p {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.second-massagebox.button{
+    align-self: center;
+}
+.button {
+    background-color: #FFDB00;
+    color: black;
+    width: 120px;
+    font-size: 12px;
+    height: 30px;
+    background-origin: padding-box;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+.button:hover{
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+   
+}
+#dismiss-button {
+    width: 120px;
+    font-size: 12px;
+    height: 25px;
+    background-origin: padding-box;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #fefefe;
+    text-decoration: none;
+}
+
+.open-second-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.second-massagebox.arrow-top:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f1eeea transparent;
+}
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .massagebox.second-massagebox{
+        display: block;
+        float: none;
+        margin: 40px auto;
+    }
+}
