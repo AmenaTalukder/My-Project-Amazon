@@ -10,4 +10,14 @@
 ![Screenshot 2024-09-12 195530](https://github.com/user-attachments/assets/4c2e2709-02bb-41b7-b665-38677a1526fd)
 
 
-This is my Amazon Project in javaScript
+## Features
+<br>User Authentication: Secure registration and login processes with validation.
+<br>Dashboard: A responsive and intuitive dashboard that displays user information and activities.
+<br>Profile Management: Users can update their profile details and preferences.
+<br>Responsive Design: Optimized for both desktop and mobile devices to ensure a smooth user experience.
+<br>State Management: Efficient management of application state using hooks and context API.
+## Technologies Used
+<br>Frontend: React, JavaScript, HTML, CSS
+<br>State Management: React Context API
+<br>Routing: React Router
+<br>Authentication: Firebase Authentication (or any other preferred method)
